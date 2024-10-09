@@ -3,29 +3,29 @@
 Mapsforge map style for OpenAndroMaps optimized for Karoo 2/3 and MTB by Enderthor
 
 ## Instructions:
-Backup original karoo theme (offline_v8.xml) before replacing it with this one.
-Download manual version of the latest elevate theme (http://www.openandromaps.org/en/legend/elevate-mountain-hike-theme), uncompres it and copy the folder "ele-res" to the /mnt/sdcard/ folder on your Karoo device.
-Copy this file to the /mnt/sdcard/ folder on your Karoo device (overwriting the existing offline_v8.xml file).
+- Backup original karoo theme (offline_v8.xml) before replacing it with this one.
+- Download manual version of the latest elevate theme (http://www.openandromaps.org/en/legend/elevate-mountain-hike-theme), uncompres it and copy the folder "ele-res" to the /mnt/sdcard/ folder on your Karoo device.
+- Copy this file to the /mnt/sdcard/ folder on your Karoo device (overwriting the existing offline_v8.xml file).
 
 ## Versions
-v-1.0 Initial Release
-v-1.1 Trees and forest patterns added / Barriers section added / Erased some unused code
-v-1.2 Tracks and paths improved 
-v-1.3 Trees svg removed for better clarity / Added some new symbols
-v-1.4 Modify tracks and paths 
-v-1.5 Modify draw order of some elements 
+- v-1.0 Initial Release
+- v-1.1 Trees and forest patterns added / Barriers section added / Erased some unused code
+- v-1.2 Tracks and paths improved 
+- v-1.3 Trees svg removed for better clarity / Added some new symbols
+- v-1.4 Modify tracks and paths 
+- v-1.5 Modify draw order of some elements 
 
 ## License
 
-This map style is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-For commercial usage it is licensed under a Attribution-NoDerivatives 4.0 International License: https://creativecommons.org/licenses/by-nd/4.0/
+- This map style is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+- For commercial usage it is licensed under a Attribution-NoDerivatives 4.0 International License: https://creativecommons.org/licenses/by-nd/4.0/
 
 You can use this style ( provided as-is, no warranties neither responsabilities).
 
-Code is based on Tony mofication of original karoo v5 theme.
-Code is based on original karoo v7 offline theme.
-Symbols/patterns/code are also based on Elevate4MTB theme  by Tobias Kühn, http://www.openandromaps.org/en/legend/elevate-mountain-hike-theme
-Symbols/patterns/code are based on Elevate theme (version 5.2 from 2022-11-06) by Tobias Kühn, http://www.openandromaps.org/en/legend/elevate-mountain-hike-theme that they are based on Elevate theme (version 5.2 from 2022-11-06) by Tobias Kühn, http://www.openandromaps.org/en/legend/elevate-mountain-hike-theme
+- Code is based on Tony mofication of original karoo v5 theme.
+- Code is based on original karoo v7 offline theme.
+- Symbols/patterns/code are also based on Elevate4MTB theme  by Tobias Kühn, http://www.openandromaps.org/en/legend/elevate-mountain-hike-theme
+- Symbols/patterns/code are based on Elevate theme (version 5.2 from 2022-11-06) by Tobias Kühn, http://www.openandromaps.org/en/legend/elevate-mountain-hike-theme that they are based on Elevate theme (version 5.2 from 2022-11-06) by Tobias Kühn, http://www.openandromaps.org/en/legend/elevate-mountain-hike-theme
 
 
 ## Symbols and patterns licenses:
