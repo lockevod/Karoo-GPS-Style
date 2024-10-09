@@ -1,6 +1,6 @@
 # Karoo Hammerhead Style 
 
-Mapsforge map style for OpenAndroMaps optimized for Karoo 2/3 and MTB by Enderthor ForoMTB
+Mapsforge map style for OpenAndroMaps optimized for Karoo 2/3 and MTB by Enderthor
 
 ## Instructions:
 Backup original karoo theme (offline_v8.xml) before replacing it with this one.
@@ -15,7 +15,7 @@ v-1.3 Trees svg removed for better clarity / Added some new symbols
 v-1.4 Modify tracks and paths 
 v-1.5 Modify draw order of some elements 
 
-## License:
+## License
 
 This map style is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 For commercial usage it is licensed under a Attribution-NoDerivatives 4.0 International License: https://creativecommons.org/licenses/by-nd/4.0/
@@ -28,7 +28,7 @@ Symbols/patterns/code are also based on Elevate4MTB theme  by Tobias Kühn, http
 Symbols/patterns/code are based on Elevate theme (version 5.2 from 2022-11-06) by Tobias Kühn, http://www.openandromaps.org/en/legend/elevate-mountain-hike-theme that they are based on Elevate theme (version 5.2 from 2022-11-06) by Tobias Kühn, http://www.openandromaps.org/en/legend/elevate-mountain-hike-theme
 
 
-## Symbols and patterns licenses:
+## Symbols and patterns licenses:
 - all patterns, symbols for cliff, geyser, ladder, oneways, peaks, railway_crossings, ridge, rungs, safety_rope, via ferrata, volcano, waterfall, wilderness hut, goods_lift, drag_lift, bridge_movable, turnstile, hot spring, public transport, cities, apartment, beach_resort, water_park, swimming_area, bunkers, windpump, watermill and modifications/adaptions of other symbols by Tobias Kuehn - CC BY NC SA 4.0 license (commercial usage: CC BY ND 4.0 license)
 - most symbols: http://www.sjjb.co.uk/mapicons - CC-0 license
 - waymark symbols based on: Locus internal theme, Apache License
