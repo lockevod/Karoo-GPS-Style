@@ -23,9 +23,22 @@ Mapsforge map style for OpenAndroMaps optimized for Karoo 2/3 and MTB by Enderth
 You can use this style ( provided as-is, no warranties neither responsabilities).
 
 - Code is based on Tony mofication of original karoo v5 theme.
-- Code is based on original karoo v7 offline theme.
+- Code is based on original karoo v7/v8 offline theme.
 - Symbols/patterns/code are also based on Elevate4MTB theme  by Tobias Kühn, http://www.openandromaps.org/en/legend/elevate-mountain-hike-theme
 - Symbols/patterns/code are based on Elevate theme (version 5.2 from 2022-11-06) by Tobias Kühn, http://www.openandromaps.org/en/legend/elevate-mountain-hike-theme that they are based on Elevate theme (version 5.2 from 2022-11-06) by Tobias Kühn, http://www.openandromaps.org/en/legend/elevate-mountain-hike-theme
+
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM.
+
+"Hammerhead", "Karoo", "Karoo SDK", and "Karoo 2" may be copyright and/or trademark and/or property of Hammerhead Navigation Inc or a parent or subsidiary company.
 
 
 ## Symbols and patterns licenses:
