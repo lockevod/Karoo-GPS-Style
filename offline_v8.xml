@@ -114,7 +114,7 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
             </m>
             <m v="farm|farmyard|farmland|orchard|vineyard">
                 <area mesh="true" fill="#a7c28f"/>
-                <area src="file:ele-res/s_farmyard" symbol-height="70" symbol-width="70" />
+                <area src="file:ele-res/s_farmyard.svg" symbol-height="70" symbol-width="70" />
             </m>
             <m v="quarry">
                 <area mesh="true" fill="#b8b1ad"/>
