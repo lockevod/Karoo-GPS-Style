@@ -3,8 +3,7 @@
 Mapsforge map style for OpenAndroMaps optimized for Karoo 2/3 and MTB by Enderthor
 
 ## Instructions:
-- Download this file. Sometimes if you donwload xml files in github, they can have some problems. Please donwload the whole project (zip) and uncompress it. You can also download the raw file (not copy the raw file).
-- Backup original karoo theme (offline_v8.xml) before replacing it with this one. 
+- Backup original karoo theme (offline_v8.xml) before replacing it with this one.
 - Download manual version of the latest elevate theme (http://www.openandromaps.org/en/legend/elevate-mountain-hike-theme), uncompres it and copy the folder "ele-res" to the /mnt/sdcard/ folder on your Karoo device.
 - Copy this file to the /mnt/sdcard/ folder on your Karoo device (overwriting the existing offline_v8.xml file).
 
@@ -15,6 +14,7 @@ Mapsforge map style for OpenAndroMaps optimized for Karoo 2/3 and MTB by Enderth
 - v-1.3 Trees svg removed for better clarity / Added some new symbols
 - v-1.4 Modify tracks and paths 
 - v-1.5 Modify draw order of some elements 
+- v-1.6 Captions improvement 
 
 ## License
 
