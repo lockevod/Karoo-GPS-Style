@@ -725,9 +725,6 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
     <!-- highway=cycleway indicates a separate way used for cycling -->
     <m e="way" k="highway" v="cycleway" zoom-min="13">
         <line use="cycling_path"/>
-        <m zoom-min="15">
-            <text use="road_label" fill="#222222" font-size="13" priority="11"/>
-        </m>
     </m>
     <m e="way" k="highway" v="residential|living_street">
         <m zoom-min="15">
@@ -736,7 +733,7 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
         <m zoom-max="14" zoom-min="13">
             <line stroke="#ffffff" stroke-linecap="round" stroke-width="0.8"/>
         </m>
-        <m zoom-min="13">
+        <m zoom-min="14">
             <text use="road_label" font-size="12" priority="13"/>
         </m>
     </m>
@@ -784,15 +781,8 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
             <text use="road_label" fill="#222222" display="ifspace" font-size="13" priority="10"/>
         </m>
     </m>
-    <!-- Caption for other tracks-->
-    <m e="any" k="*" v="*" zoom-min="16">
-        <m e="way" k="highway" v="footway|pedestrian|path|track">
-            <caption k="name" font-style="bold" font-size="8" fill="#000000" stroke="#E5FFFFFF" stroke-width="2" />
-        </m>
-    </m>
     <!-- End Core-->
     
-
     <!-- barriers -->
      <m e="way" k="barrier" v="fence|cycle_barrier|chain|gate|hampshire_gate|stile" zoom-min="15">
         <line stroke="#000000" stroke-dasharray="2,2" stroke-linecap="butt" stroke-width="0.1" />
@@ -978,63 +968,51 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
 
     <!-- Begin natural captions -->
     <m e="any" k="*" v="*">
-		<m e="way" k="landuse" v="farm|farmyard|residential" zoom-min="15">
-			<caption k="name" font-style="italic" font-family="serif" font-size="11" fill="#888888" stroke="#888888" stroke-width="0.1" />
-		</m>
-		<m e="way" k="landuse|leisure|amenity" v="recreation_ground|grass|military|garden|dog_park|cemetery|grave_yard" zoom-min="15">
-			<caption k="name" font-style="italic" font-family="serif" font-size="11" fill="#555555" stroke="#DDDDDD" stroke-width="1.7" />
+		<m e="way" k="landuse|leisure|amenity" v="military|cemetery|grave_yard" zoom-min="15">
+			<caption k="name" font-style="italic" font-family="serif" font-size="11" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
 		</m>
 		<m e="way" k="boundary" v="~">
 			<m e="way" k="leisure" v="park" zoom-min="16">
-				<caption k="name" font-style="italic" font-family="serif" font-size="11" fill="#555555" stroke="#DDDDDD" stroke-width="1.7" />
+				<caption k="name" font-style="italic" font-family="serif" font-size="11" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
 			</m>
 		</m>
-		<m e="way" k="natural|landuse" v="fell|meadow|grassland|heath|scrub|vineyard|plant_nursery|field|farmland" zoom-min="14">
-			<caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#779977" stroke="#779977" stroke-width="0.1" />
-		</m>
-		<m e="way" k="natural|landuse" v="beach|sand" zoom-min="14">
-			<caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#997755" stroke="#997755" stroke-width="0.1" />
-		</m>
-		<m e="way" k="natural|landuse" v="rock|fell|scree|shingle|landfill|quarry|marsh|wetland|crater|sinkhole" zoom-min="14">
-			<caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#888888" stroke="#888888" stroke-width="0.1" />
+		<m e="way" k="natural|landuse" v="rock|landfill|quarry|crater|sinkhole" zoom-min="15">
+			<caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="0.1" />
 		</m>
 		<m e="way" k="natural|landuse" v="forest|wood" zoom-min="15">
-			<caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#779977" stroke="#779977" stroke-width="0.1" />
+			<caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="0.1" />
 		</m>
 		<m e="way" k="natural|landuse" v="desert" zoom-min="15">
 			<caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#997755" stroke="#997755" stroke-width="0.1" />
 		</m>
-		<!--<m e="way" k="landuse|power" v="retail|commercial|industrial|brownfield|garages|construction|greenfield|plant" zoom-min="15">
-			<caption k="name" font-style="italic" font-family="serif" font-size="11" fill="#888888" stroke="#888888" stroke-width="0.1" />
-		</m>-->
+
 		<m e="any" k="place" v="locality" zoom-min="14">
 			<m e="any" k="mountain_pass|natural|tourism" v="~">
-				<caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#888888" stroke="#888888" stroke-width="0.1" />
-				<!--<caption k="ele" priority="-5" dy="21" font-style="italic" font-family="serif" font-size="10" fill="#888888" stroke="#888888" stroke-width="0.1" />-->
+				<caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="0.1" />
 			</m>
 		</m>
 		<m e="any" k="natural" v="cape" zoom-min="13">
-			<caption k="name" font-style="italic" font-family="serif" font-size="10" fill="#888888" stroke="#888888" stroke-width="0.1" />
+			<caption k="name" font-style="bold" font-family="serif" font-size="10" fill="#888888" stroke="#888888" stroke-width="0.1" />
 		</m>
-		<m e="any" k="natural" v="valley|canyon|peninsula|bay|fjord" zoom-min="11">
+		<m e="any" k="natural" v="valley|canyon|peninsula|bay|fjord" zoom-min="12">
 			<m e="node" k="*" v="*">
-				<caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#888888" stroke="#888888" stroke-width="0.1" />
+				<caption k="name" font-style="bold" font-family="serif" font-size="12" fill="#888888" stroke="#888888" stroke-width="0.1" />
 			</m>
 			<m e="way" closed="yes" k="*" v="*" zoom-max="15">
-				<caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#888888" stroke="#888888" stroke-width="0.1" />
+				<caption k="name" font-style="bold" font-family="serif" font-size="12" fill="#888888" stroke="#888888" stroke-width="0.1" />
 			</m>
 			<m e="way" closed="no" k="*" v="*" zoom-max="15">
-				<pathText k="name" font-style="italic" font-family="serif" font-size="12" fill="#888888" stroke="#888888" stroke-width="0.1" repeat-start="10" repeat-gap="100" />
+				<pathText k="name" font-style="bold" font-family="serif" font-size="12" fill="#888888" stroke="#888888" stroke-width="0.1" repeat-start="10" repeat-gap="100" />
 			</m>
 			<m e="way" closed="no" k="*" v="*" zoom-min="16">
-				<pathText k="name" font-style="italic" font-family="serif" font-size="14" fill="#888888" stroke="#888888" stroke-width="0.1" repeat-start="80" repeat-gap="300" />
+				<pathText k="name" font-style="bold" font-family="serif" font-size="14" fill="#888888" stroke="#888888" stroke-width="0.1" repeat-start="80" repeat-gap="300" />
 			</m>
 		</m>
 		<m e="any" k="place" v="islet|island" zoom-min="13">
-			<caption k="name" font-style="italic" font-family="serif" font-size="10" fill="#888888" stroke="#888888" stroke-width="0.1" />
+			<caption k="name" font-style="bold" font-family="serif" font-size="10" fill="#888888" stroke="#888888" stroke-width="0.1" />
 		</m>
 		<m e="any" k="place" v="archipelago" zoom-min="6" zoom-max="12">
-			<caption priority="96" k="name" font-style="italic" font-family="serif" font-size="10" fill="#888888" stroke="#888888" stroke-width="0.1" />
+			<caption priority="96" k="name" font-style="bold_italic" font-family="serif" font-size="10" fill="#888888" stroke="#888888" stroke-width="0.1" />
 
 		</m>
 		<m e="any" k="place" v="sea">
@@ -1121,23 +1099,23 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
     <!-- elevation captions -->
     <m e="way" k="*" v="*" zoom-max="13" zoom-min="13">
         <m e="way" k="contour_ext" v="elevation_major">
-            <text k="ele" font-style="bold" font-size="8" fill="#6E5A46" stroke="#E5FFFFFF" stroke-width="1"  />
+            <pathText k="ele" font-style="bold" font-size="8" fill="#6E5A46" stroke="#E5FFFFFF" stroke-width="1" repeat-start="50" repeat-gap="150" />
         </m>
     </m>
     <m e="way" k="*" v="*" zoom-min="14" zoom-max="14">
         <m e="way" k="contour_ext" v="elevation_major">
-            <text k="ele" font-style="bold" font-size="8" fill="#6E5A46" stroke="#E5FFFFFF" stroke-width="1"  />
+            <pathText k="ele" font-style="bold" font-size="8" fill="#6E5A46" stroke="#E5FFFFFF" stroke-width="1" repeat-start="50" repeat-gap="150" />
         </m>
     </m>
 
     <m e="way" k="*" v="*" zoom-min="15" zoom-max="15">
         <m e="way" k="contour_ext" v="elevation_medium|elevation_major">
-            <text k="ele" font-style="bold" font-size="8" fill="#6E5A46" stroke="#E5FFFFFF" stroke-width="1"  />
+            <pathText k="ele" font-style="bold" font-size="8" fill="#6E5A46" stroke="#E5FFFFFF" stroke-width="1"  repeat-start="100" repeat-gap="150" />
         </m>
     </m>
     <m e="way" k="*" v="*" zoom-min="16">
         <m e="way" k="contour_ext" v="elevation_medium|elevation_major">
-            <text k="ele" font-style="bold" font-size="9" fill="#6E5A46" stroke="#E5FFFFFF" stroke-width="2"  />
+            <pathText k="ele" font-style="bold" font-size="9" fill="#6E5A46" stroke="#E5FFFFFF" stroke-width="2" repeat-start="200" repeat-gap="200" />
         </m>
     </m>
     <m e="way" k="leisure" v="ls_track" closed="yes" zoom-min="14">
