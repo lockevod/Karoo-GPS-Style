@@ -12,6 +12,7 @@ v-1.3 Trees svg removed for better clarity / Added some new symbols
 v-1.4 Modify tracks and paths 
 v-1.5 Modify draw order of some elements 
 v-1.6 Modify pathtext for text (in elevation captions). Add captions for some elements
+v-1.7 Added more svg symbols for some elements (wood/forest and natural elements)
 
 Code is based on Tony mofication of original karoo v5 theme.
 Code is based on original karoo v7 offline theme.
@@ -117,8 +118,18 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
                 <area mesh="true" fill="#a7c28f"/>
                 <area src="file:ele-res/s_farmyard.svg" symbol-height="70" symbol-width="70" />
             </m>
-            <m v="quarry">
+            <m v="quarry" closed="yes" zoom-min="14">
                 <area mesh="true" fill="#b8b1ad"/>
+                <m e="any" k="*" v="*" zoom-max="14">
+                    <area src="file:ele-res/p_scree.svg" symbol-height="16" />
+                </m>
+                <m e="any" k="*" v="*" zoom-min="15" zoom-max="16">
+                    <area src="file:ele-res/p_scree.svg" symbol-height="32" />
+                </m>
+                <m e="any" k="*" v="*" zoom-min="17">
+                    <area src="file:ele-res/p_scree.svg" symbol-height="64" />
+                </m>
+                <line stroke="#9EA199" stroke-width="0.2" />
             </m>
             <m v="industrial|railway">
                 <area mesh="true" fill="#d4c3d6"/>
@@ -160,7 +171,7 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
                         <area fill="#C8E1C8" />
                         <area symbol-height="64" src="file:ele-res/p_scrub.svg" />
                     </m>
-                    <m e="way" k="*" v="*" zoom-min="18">
+                    <m e="way" k="*" v="*" zoom-min="17">
                         <area fill="#C8E1C8" />
                         <area symbol-height="128" src="file:ele-res/p_scrub.svg" />
                     </m>
@@ -179,6 +190,8 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
             </m>
             <m v="rock|bare_rock|stone|glacier|cliff|bedrock">
                 <area mesh="true" fill="#cccccc"/>
+            </m>
+            <m v="rock|bare_rock|stone|glacier|cliff|bedrock" zoom-min="14">
                 <area src="file:ele-res/p_rock.svg" symbol-height="40" symbol-width="40" />
             </m>
             <m v="glacier">
@@ -194,9 +207,38 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
             <area mesh="true" fill="#999999"/>
         </m>
 
-        <m k="landuse|natural" v="forest|wood">
+     <!--   <m k="landuse|natural" v="forest|wood">
             <area mesh="true" fill="#a8bc9a"/>
-        </m>
+        </m>-->
+
+        <m e="way" k="natural|landuse" v="forest|wood" closed="yes">
+			<m e="any" k="*" v="*" zoom-max="13" zoom-min="8">
+				<area fill="#A5CBA5" />
+				<line stroke="#A5CBA5" stroke-width="0.2" />
+			</m>
+			<m e="any" k="*" v="*" zoom-min="14" zoom-max="16">
+				<m e="any" k="wood|leaf_type" v="coniferous|needleleaved">
+					<area src="file:ele-res/p_wood-coniferous.svg" symbol-height="64" />
+				</m>
+				<m e="any" k="wood|leaf_type" v="deciduous|broadleaved">
+					<area src="file:ele-res/p_wood-deciduous.svg" symbol-height="64" />
+				</m>
+				<m e="any" k="wood|leaf_type" v="~|mixed|leafless">
+					<area src="file:ele-res/p_wood-mixed.svg" symbol-height="64" />
+				</m>
+			</m>
+			<m e="any" k="*" v="*" zoom-min="17">
+				<m e="any" k="wood|leaf_type" v="coniferous|needleleaved">
+					<area src="file:ele-res/p_wood-coniferous.svg" symbol-height="128" />
+				</m>
+				<m e="any" k="wood|leaf_type" v="deciduous|broadleaved">
+					<area src="file:ele-res/p_wood-deciduous.svg" symbol-height="128" />
+				</m>
+				<m e="any" k="wood|leaf_type" v="~|mixed|leafless">
+					<area src="file:ele-res/p_wood-mixed.svg" symbol-height="128" />
+				</m>
+			</m>
+		</m>
 
         <m k="landuse" v="grass">
             <area mesh="true" fill="#c4deab"/>
@@ -786,6 +828,18 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
     <!-- barriers -->
      <m e="way" k="barrier" v="fence|cycle_barrier|chain|gate|hampshire_gate|stile" zoom-min="15">
         <line stroke="#000000" stroke-dasharray="2,2" stroke-linecap="butt" stroke-width="0.1" />
+    </m>
+
+    <!-- Bike not allowed... only when paths/tracks and we known bic is not allowed  (access private, destination, etc is not marked)-->
+    <m e="way" k="highway" v="path|footway|steps|bridleway|service|cycleway|track|byway" zoom-min="15">
+        <m e="any" k="bicycle" v="bic_no">
+            <line src="file:ele-res/p_access-no.svg" symbol-height="8" stroke-width="0.5" />
+        </m>
+        <m e="any" k="bicycle" v="~">
+            <m e="any" k="access" v="acc_no">
+                <line src="file:ele-res/p_access-no.svg" symbol-height="8" stroke-width="0.5" />
+            </m>
+        </m>
     </m>
 
     <!-- route=ferry -->
