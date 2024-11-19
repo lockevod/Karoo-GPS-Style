@@ -13,7 +13,7 @@ v-1.4 Modify tracks and paths
 v-1.5 Modify draw order of some elements 
 v-1.6 Modify pathtext for text (in elevation captions). Add captions for some elements
 v-1.7 Added more svg symbols for some elements (wood/forest and natural elements)
-v-1.8 Added shelter hut (wilderness hut) symbol and modify water colour (original karoo style with offline_v9)
+v-1.8 Added shelter hut (wilderness hut and alpine hut) symbol and modify water colour (original karoo style with offline_v9)
 
 Code is based on Tony mofication of original karoo v5 theme.
 Code is based on original karoo v7 offline theme.
@@ -945,7 +945,7 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
                 <caption k="name" symbol-id="s_picnic_site" position="above" font-style="bold" font-size="10" fill="#333333" stroke="#E5FFFFFF" stroke-width="2" />
             </m>
         </m>
-        <m e="any" k="tourism" v="wilderness_hut" zoom-min="15">
+        <m e="any" k="tourism" v="wilderness_hut|alpine_hut" zoom-min="15">
             <symbol id="s_shelter_wild" priority="73" src="file:ele-res/s_shelter_basic_hut.svg" symbol-height="16" />
             <m e="any" k="*" v="*" zoom-min="17">
                 <caption k="name" symbol-id="s_shelter_wild" position="above" font-style="bold" font-size="10" fill="#333333" stroke="#E5FFFFFF" stroke-width="2" />
