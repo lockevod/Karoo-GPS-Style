@@ -10,13 +10,16 @@ Mapsforge map style for OpenAndroMaps optimized for Karoo 2/3 and MTB by Enderth
 - If you use an old Karoo version you've offline_v7 and you need to replace this file (please replace the original file with this one, but you need to use the offline_v7 name)
 
 ## Versions
-- v-1.0 Initial Release
-- v-1.1 Trees and forest patterns added / Barriers section added / Erased some unused code
-- v-1.2 Tracks and paths improved 
-- v-1.3 Trees svg removed for better clarity / Added some new symbols
-- v-1.4 Modify tracks and paths 
-- v-1.5 Modify draw order of some elements 
-- v-1.6 Captions improvement 
+v-1.0 Initial Release
+v-1.1 Trees and forest patterns added / Barriers section added / Erased some unused code
+v-1.2 Tracks and paths improved 
+v-1.3 Trees svg removed for better clarity / Added some new symbols
+v-1.4 Modify tracks and paths 
+v-1.5 Modify draw order of some elements 
+v-1.6 Modify pathtext for text (in elevation captions). Add captions for some elements
+v-1.7 Added more svg symbols for some elements (wood/forest and natural elements)
+v-1.8 Added shelter hut (wilderness hut and alpine hut) symbol and modify water colour (original karoo style with offline_v9)
+v-1.9 Added footway without sidewalk 
 
 ## License
 
