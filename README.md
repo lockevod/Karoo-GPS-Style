@@ -2,6 +2,8 @@
 
 Mapsforge map style for OpenAndroMaps optimized for Karoo 2/3 and MTB by Enderthor
 
+<a href="https://www.buymeacoffee.com/enderthor" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
 ## Instructions:
 - Download this file. Sometimes if you donwload xml files in github, it can have some problems. Please donwload the whole project (zip) and uncompress it. You can also download the raw file (not copy the raw file).
 - Backup original karoo theme (offline_v8.xml) before replacing it with this one. 
