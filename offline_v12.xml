@@ -16,6 +16,7 @@ v-1.7 Added more svg symbols for some elements (wood/forest and natural elements
 v-1.8 Added shelter hut (wilderness hut and alpine hut) symbol and modify water colour (original karoo style with offline_v9)
 v-1.9 Added footway without sidewalk 
 v-1.10 Modified to new karoo style (v11) only minor changes (service road)
+v-1.11 Modified to new karoo style (v12) only minor changes (fountain and spring)
 
 Code is based on Tony mofication of original karoo v5 theme.
 Code is based on original karoo v7 offline theme.
@@ -204,6 +205,7 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
                 <area fill="#88D0D9" stroke="#D0D9BF" stroke-width="0.1" />
                 <area src="file:ele-res/p_marsh.svg" symbol-height="40" symbol-width="40" />
             </m>
+
         </m>
 
         <m k="amenity" v="parking">
@@ -302,6 +304,7 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
            <!-- <caption font-family="thin" area-size="0.2" fill="#000000" k="name" size="14"/>-->
         </m>
     </m>
+
 
     <!-- partially transparent areas, these can overlap water and land -->
      
@@ -930,7 +933,7 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
 				<caption k="name" symbol-id="s_toilets" position="above" font-style="bold" font-size="10" fill="#333333" stroke="#E5FFFFFF" stroke-width="2" />
 			</m>
 		</m>
-        <m e="any" k="amenity|waterway" v="drinking_water|water_point" zoom-min="14">
+        <m e="any" k="amenity|waterway" v="drinking_water|water_point|fountain" zoom-min="12">
             <m e="any" k="drinking_water" v="yes|~">
                 <symbol id="s_drinking_water" priority="75" src="file:ele-res/s_drinking_water.svg" symbol-height="16" />
                 <m e="any" k="*" v="*" zoom-min="18">
@@ -939,6 +942,7 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
                 </m>
             </m>
         </m>
+        
         <m e="any" k="amenity" v="cafe|bar|restaurant" zoom-min="15">
             <symbol id="s_restaurant" priority="69" src="file:ele-res/s_restaurant.svg" symbol-height="16" />
             <m e="any" k="*" v="*" zoom-min="16">
@@ -1035,6 +1039,31 @@ THIS PROJECT IS NOT OWNED, COMMISSIONED BY OR ASSOCIATED WITH HAMMERHEAD OR SRAM
             </m>
         </m>
 
+        <m e="node" k="natural" v="spring" zoom-min="12">
+			<m e="any" k="*" v="*" zoom-max="16">
+				<circle radius="1.0" scale-radius="true" fill="#0080FF" />
+				<m e="any" k="*" v="*" zoom-min="16">
+					<caption k="name" dy="-21" font-style="bold" font-size="10" fill="#0080FF" stroke="#E5FFFFFF" stroke-width="2" />
+                </m>
+				<m e="node" k="drinking_water" v="no">
+					<circle radius="0.3" scale-radius="true" fill="#CC0000" />
+                </m>
+				<m e="node" k="drinking_water" v="yes">
+					<circle radius="0.3" scale-radius="true" fill="#00CC00" />
+                </m>
+			</m>
+			<m e="any" k="*" v="*" zoom-min="17">
+				<circle radius="0.6" scale-radius="true" fill="#0080FF" />
+				<caption k="name" dy="-21" font-style="bold" font-size="10" fill="#0080FF" stroke="#E5FFFFFF" stroke-width="2" />
+				<caption k="ele" priority="-5" dy="21" font-style="bold" font-size="10" fill="#0080FF" stroke="#E5FFFFFF" stroke-width="2" />
+				<m e="node" k="drinking_water" v="no">
+					<circle radius="0.2" scale-radius="true" fill="#CC0000" />
+                </m>
+				<m e="node" k="drinking_water" v="yes">
+					<circle radius="0.2" scale-radius="true" fill="#00CC00" />
+                </m>
+			</m>
+		</m>
 
     <!-- Begin natural captions -->
     <m e="any" k="*" v="*">
