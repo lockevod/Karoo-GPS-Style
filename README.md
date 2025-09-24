@@ -23,7 +23,8 @@ Mapsforge map style for OpenAndroMaps optimized for Karoo 2/3 and MTB by Enderth
 - v-1.8 Added shelter hut (wilderness hut and alpine hut) symbol and modify water colour (original karoo style with offline_v9)
 - v-1.9 Added footway without sidewalk
 - v-1.10 Adapted to new offlines from karoo (minors changes)
-- v-1.11 Adapted to new offline (v12) from karoo (minors changes: fountain and spring)
+- v-1.14 Adapted to new offline (v14) from karoo (minor changes river and streams)
+
 
 ## License
 
