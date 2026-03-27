@@ -23,6 +23,7 @@ Mapsforge map style for OpenAndroMaps optimized for Karoo 2/3 and MTB by Enderth
 - v-1.9 Added footway without sidewalk
 - v-1.10 Adapted to new offlines from karoo (minors changes)
 - v-1.14 Adapted to new offline (v14) from karoo (minor changes river and streams)
+- v-1.15. Fix farm|farmyard error. Thanks to thegabDEV for reporting it.
 
 
 ## License
