@@ -23,6 +23,8 @@ Mapsforge map style for OpenAndroMaps optimized for Karoo 2/3 and MTB by Enderth
 - v-1.14 Adapted to new offline (v14) from karoo (minor changes river and streams)
 - v-1.15. Fix farm|farmyard error. Thanks to thegabDEV for reporting it.
 
+- Added v1 MTB. New karoo version for mtb style (now you've mtb_v1.xml and offline_v15.xml in sdcard folder). If you want to use mtb style you need to copy mtb_v1.xml and activate this style in profiles.
+
 
 ## License
 
